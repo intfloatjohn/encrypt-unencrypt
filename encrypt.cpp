@@ -24,14 +24,14 @@ int main()
  scanf("%d",&hash_1);
  printf("hash num2>");
  scanf("%d",&hash_2);
- printf("hash num>3");
+ printf("hash num3>");
  scanf("%d",&hash_3);
  hash_1_=(float)hash_1;
  hash_2_=(float)hash_2;
  hash_3_=(float)hash_3;
  printf("input the text you want to encrypt:");
  int str,str0;
- scanf(%d",&str);
+ scanf("%d",&str);
  str0=str+0;//change text to number
  float str_;
      str_=(float)str0;
@@ -42,12 +42,12 @@ int main()
    case 2:
    case 3:
    case 4:
-     {printf("serial number:\n%d",chan);
-       printf("encrypt type:\n%d",ty);
-       printf("hash num1:\n%d",hash_1);
-       printf("hash num2:\n%d",hash_2);
-      printf("hash num3:\n%d",hash_3);
-       encrypt(ty_,tc,str_,hashedx2)}break;
+     {printf("serial number:%f",chan);
+       printf("\nencrypt type:%d",ty);
+       printf("\nhash num1:%d",hash_1);
+       printf("\nhash num2:%d",hash_2);
+      printf("\nhash num3:%d",hash_3);
+       encrypt(ty_,tc,str_,hashedx2);}break;
    default:{printf("bad command!");}
      break;
    return 0;
@@ -56,14 +56,13 @@ int main()
   }
 float encrypt(float x_1,float x_2,float y_1,float y_2)
 {//use Quadratic functions as the hash function
-float result;
+float result; 
  float pt,pq,pr,ps;
   pt=y_1*x_2;
   pq=x_1*y_2;
   pr=pt-pq;
   ps=y_1-y_2;
   result=pr-ps;
-  printf("encrypted text:%f",result);
-  printf("encrypted text(if the number upside is not a interger,don't use this):%c",result);
+  printf("\nencrypted text:%f",result);
   return 0;
 }
