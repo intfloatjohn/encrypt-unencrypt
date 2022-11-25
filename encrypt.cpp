@@ -1,12 +1,12 @@
 #include"encrypt__.h"
 //designed and developed by intfloatjohn,xxl.
-float encrypt(float x_1,float x_2,float y_1,float y_2);
-int main()
+float encrypt(float x_1,float x_2,float y_1,float y_2);//set a function
+int main()//main funtion
 {int a,b,c,d;
   a=2;
   b=3;
   c=5;
-  d=7;
+  d=7;//set encrypt type
   float chan;
  float a_,b_,c_,d_;
  printf("input serial number>");
